@@ -1,10 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Meri Pehli Website</title>
+    <meta charset="UTF-8">
+    <title>Deepak Jangra | Official Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #003366;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #004080;
+            text-align: center;
+        }
+
+        section p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+            text-align: center;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #004080;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #003366;
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            color: #666;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            border-top: 1px solid #ddd;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hiii or bta kaisi hai, thik hai kya khaan busy hai..?</h1>
-    <p>ye maine khud website bnayi hai first time socha tumhe hi tag kardu</p>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Welcome to Deepak Jangra's Website</h1>
+        <p>Your journey starts here</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home">
+        <h2>Explore, Learn, Connect</h2>
+        <p>
+            Hello! This is my official personal website. I'm glad you're here!<br><br>
+            Whether you're here to discover, learn, or simply explore — there's something for everyone.<br>
+            I hope you enjoy your stay.
+        </p>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            My name is <strong>Deepak Jangra</strong>. I’m a self-driven and passionate individual with a love for learning new technologies and building useful things on the web.<br><br>
+            Whether it’s web development, design, or solving real-world problems using code, I enjoy turning ideas into digital reality.<br>
+            I created this site to share my journey, connect with others, and keep learning every day. Thanks for being here!
+        </p>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:deepakj2324@gmail.com" method="POST" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Deepak Jangra • All Rights Reserved • 
+        <a href="mailto:deepakj2324@gmail.com">deepakj2324@gmail.com</a>
+    </footer>
+
 </body>
 </html>
+
