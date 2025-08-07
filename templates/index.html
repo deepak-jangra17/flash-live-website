@@ -142,10 +142,18 @@
     <!-- CONTACT SECTION -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <form action="mailto:deepakj2324@gmail.com" method="POST" enctype="text/plain">
+        <form action="https://formspree.io/f/mpwloral" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+
+            <!-- Spam protection (invisible to users) -->
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- Optional redirect after submission -->
+            <input type="hidden" name="_next" value="https://my-first-website-h8fw.onrender.com/#thankyou">
+
             <button type="submit">Send Message</button>
         </form>
     </section>
@@ -158,4 +166,3 @@
 
 </body>
 </html>
-
